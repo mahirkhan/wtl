@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>marksheet</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		table td{
+			border :2px solid;
+		}
+		td{
+			border :2px solid;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript">
+			function loadXMLDoc(dname)
+			{
+				if(window.XMLHttpRequest)
+				{
+					xhttp=new XMLHttpRequest();
+				}
+				else{
+					xhttp=new ActiveXObject("microsoft.XMLHTTP");
+				}
+				xhttp.open("GET",dname,false);
+				xhttp.send();
+				return xhttp.responseXML;
+
+			}
+			function loadmarksheet()
+			{
+				xmldoc=loadXMLDoc("marksheet.xml");
+				x=xmldoc.getElementsByTagName('course');
+				var divtext="<table>"+
+				"<tr><th>course id</th><th>title</th><th>th</th><th>ia</th><th>tw</th><th>orpr</th><th>total</th></tr>";
+						
+					for (i = 0; i < x.length ; i++) {
+					courseid=xmldoc.getElementsByTagName("courseid")[i].firstChild.nodeValue;
+					title=xmldoc.getElementsByTagName("title")[i].firstChild.nodeValue;
+					th=xmldoc.getElementsByTagName("th")[i].firstChild.nodeValue;
+					ia=xmldoc.getElementsByTagName("ia")[i].firstChild.nodeValue;
+					orpr=xmldoc.getElementsByTagName("orpr")[i].firstChild.nodeValue;
+					tw=xmldoc.getElementsByTagName("tw")[i].firstChild.nodeValue;
+					total=xmldoc.getElementsByTagName("total")[i].firstChild.nodeValue;
+
+					divtext +="<tr><td>"+courseid+"</td><td>"+title+"</td><td>"+th+"</td><td>"+ia+"</td><td>"+orpr+"</td><td>"+tw+"</td><td>"+total+"</td></tr>";
+				
+				}
+
+				divtext +="</table>";
+				document.getElementById("marksheet").innerHTML=divtext;
+			}
+			</script>
+
+
+	</script>
+	</head>
+<body>
+<input type="submit" name="submit" value="submit" onclick="loadmarksheet()">
+<div id="marksheet"><h2>marksheet</h2></div>
+</body>
+</html>

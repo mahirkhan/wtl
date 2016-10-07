@@ -1,0 +1,29 @@
+body{
+    background-color: #f7f7f7;
+}
+h1{
+    text-align: center;
+}
+q{
+    text-align: center;
+    display: block;
+    font-style : italic;
+}
+q+q{
+    font-size: 12px;
+    font-style: normal;
+}
+
+#left,#right{
+    width: 45%;
+    position: relative;
+    float: left;
+    
+}
+email{
+    display: block;
+    text-align: center;
+}
+hr{
+    display:block;
+}

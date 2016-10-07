@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTf-8" ?>
+
+<marksheet>
+	<course>
+		<courseid>1</courseid>
+		<title>ds</title>
+		<th>48</th>
+		<ia>45</ia>
+		<orpr>23</orpr>
+		<tw>20</tw>
+		<total>78</total>
+
+	</course>
+	<course>
+		<courseid>2</courseid>
+		<title>tcs</title>
+		<th>33</th>
+		<ia>36</ia>
+		<orpr>73</orpr>
+		<tw>30</tw>
+		<total>90</total>
+
+	</course>
+	<course>
+		<courseid>3</courseid>
+		<title>maths</title>
+		<th>84</th>
+		<ia>77</ia>
+		<orpr>33</orpr>
+		<tw>25</tw>
+		<total>90</total>
+
+	</course>
+	<course>
+		<courseid>4</courseid>
+		<title>oopm</title>
+		<th>47</th>
+		<ia>33</ia>
+		<orpr>97</orpr>
+		<tw>21</tw>
+		<total>111</total>
+
+	</course>
+	<course>
+		<courseid>5</courseid>
+		<title>ee</title>
+		<th>77</th>
+		<ia>22</ia>
+		<orpr>97</orpr>
+		<tw>19</tw>
+		<total>138</total>
+
+	</course>
+	<course>
+		<courseid>6</courseid>
+		<title>dt</title>
+		<th>45</th>
+		<ia>33</ia>
+		<orpr>78</orpr>
+		<tw>18</tw>
+		<total>178</total>
+
+	</course>
+
+</marksheet>	

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Testing</title>
+	</head>
+	<body>
+		<?php
+		$userid=["sem1"=>50,"sem2"=>60,"sem3"=>50];
+		$contact=["sem1"=>50,"sem2"=>60,"sem3"=>50];
+		$table="<table border=1px>
+		<th></th>
+		<th>maths</th>
+		<th>oopm</th>";
+		for($i=0 ; $i<=2 ; $i++)
+		{
+			$var=$a1[$i];
+			$table=$table.'<tr><th></th>
+							<td>'.$userid[$var].'</td>
+							<td>'.$contact[$var].'</td>
+							
+							</tr>';
+							
+
+
+		}
+		$table= $table. "</table>";
+		echo $table;

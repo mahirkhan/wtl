@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> My First JavaScript Example </title><script type="text/javascript">
+	var today = new Date();
+    var num=5.5;
+    document.write("<b> Today's Date is:</b>"+today);
+    document.write("<br>today's month is</b>" +(parseInt(today.getMonth())+1));
+    document.write("<br> rounding up"+Math.ceil(num));
+    var num1=5.56;
+     document.write("<br><br> number 1 is :</b>" +num1);
+    
+    function greetings(btn){
+        alert("checeking");
+        var textbox=document.getElementById("usrname");
+        alert("hello" +textbox.value);
+        btn.textContent="you just clicked me";
+    }
+</script>
+
+<body>
+    <form>
+        <input type="text" id="username" name="username" required>
+        <button onclick="greetings(this)">click here</button>
+    </form>
+    </body>
+</head>
+</html>

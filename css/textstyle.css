@@ -1,0 +1,54 @@
+body{
+    background-image: url("../img/stripe.png");
+    background-repeat: repeat;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    
+}
+
+#container{
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+p{
+    text-align: justify;
+    padding: 4px;
+    line-height: 1.5em;
+}
+
+h3{
+    text-transform: capitalize;
+    padding: 4px;
+    
+}
+p:first-letter{
+    font-size: 1.5em;
+}
+p:first-line{
+    font-weight: bold;
+}
+h1{
+    word-spacing: 1.5em;
+}
+#left,#right
+{
+    background-color: red;
+    padding: auto 10px auto 10px;
+}
+a:visted
+{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+help{
+    display: block;
+}
+#refrence{
+    display: block;
+}
